@@ -17,6 +17,7 @@ class Adb_utils:
     def _get_ui_hierarchy_dump(self):
         cmd = self.device + ["exec-out", "uiautomator dump /dev/tty"]
         result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
+        time.sleep(3)
         # The output will contain some additional lines, so we need to extract the XML part
         xml_start = result.stdout.find("<hierarchy")
         xml_end = result.stdout.find("UI hierchary dumped to")
