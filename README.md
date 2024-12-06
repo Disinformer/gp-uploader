@@ -1,5 +1,6 @@
-This script uploads media to Google Photos via a connected adb device. 
+Fork from https://github.com/xob0t/gp-uploader
+Trying to fix waiting UI upload button element/
 
 ```
-pip install git+https://github.com/xob0t/gp-uploader -U
+pip install git+https://github.com/Disinformer/gp-uploader -U
 ```
